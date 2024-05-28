@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+/*
+        var nome = "Edir"; // texto ou string
+        var idade = 23; //number integer
+        var peso = 43.2; //number float
+        var acordado = true; // boolean
+
+
+//      alert("Olá " + nome + "!!!");
+
+        // Entrada -> Processamento -> Saída
+        //IO (entrada-saída)
+
+ 
+        function exibir()
+        {
+            alert("um clique!");
+        }
+
+        function oi()
+        {
+            alert("dois cliques!")
+        }
+        function puxou()
+        {
+            alert("puxou!")
+        }
+        function botaodireito()
+        {
+            alert("botao direito!")
+        }
+        function exibir2()
+        {
+            var nome = prompt("DIgite seu nome");
+
+            console.log("oi " + nome + "!!!");
+        }
+*/
+        
+        function soma()
+        {
+            var x = prompt("numero1");
+            var y = prompt("numero2");
+            var resultado = parseInt(x) + parseInt(y);
+            console.log (resultado);
+
+        }
+
+        function idade()
+        {
+            var idade =  prompt("Qual sua idade?");
+            
+            if (idade < 18)
+            {
+                console.log("criança");
+            }else if (idade > 60) {
+                console.log("idoso");
+            }else{
+                console.log("adulto");
+            }
+        }
+        /*
+        function variavel()
+        {
+            var n1 = prompt("numero1");
+            var n2 = prompt("numero2");
+            if (parseInt(n1) > parseInt(n2))
+            {
+                console.log(n1 + " é maior");
+            }else if(parseInt(n1) == parseInt(n2)){
+                console.log("Os dois são iguais");
+            }
+            else{
+                console.log(n2 + " é maior");
+            }
+            
+        }
+        */
+        function variavel2()
+        {
+            var n1 = prompt("numero1");
+            var n2 = prompt("numero2");
+            var n3 = prompt("numero3");
+            if (parseInt(n1) > parseInt(n2))
+            {
+                if(parseInt(n1) > parseInt(n3))
+                {
+                    console.log(n1 + " é maior que " + n2 + " e " + n3);
+                }else
+                {
+                    console.log(n3 + " é maior que " + n1 + " e " + n2);
+                }
+                
+            }else if (parseInt(n2) > parseInt(n1))
+            {
+                if(parseInt(n2) > parseInt(n3))
+                {
+                    console.log(n2 + " é maior que " + n1 + " e " + n3);
+                }else
+                {
+                    console.log(n3 + " é maior que " + n1 + " e " + n2);
+                }
+                
+            }
+            else{
+                console.log(n3 + " é maior que " + n1 + " e " + n2);
+            }
+        }
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <h1>Javascript</h1>
+
+    
+
+   <button onclick="soma()">Somar 2 numeros</button>
+   <button onclick="idade()">idade</button>
+   <button onclick="variavel()">numero maior</button>
+   <button onclick="variavel2()">numero maior2</button>
+   
+
+</body>
+</html>
