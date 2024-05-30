@@ -9,13 +9,15 @@ if (idade === "12")
     console.log("falso");
 }
 
+*/
+//if(idade < 13 && idade < 2)
 // List-> Vetor -> array
-var cidades = ["Curitiba" , "Pinhais", "Colombo" ];
+//var cidades = ["Curitiba" , "Pinhais", "Colombo" ];
 
 
 
 // add um elemento ao array
-cidades.push("Araucaria");
+//cidades.push("Araucaria");
 
 /*
 console.log( cidades[0] );
