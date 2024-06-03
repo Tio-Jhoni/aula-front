@@ -79,5 +79,16 @@ function impar()
             console.log(n);
         }
 }
+function consoante()
+{
+    var letra= valor.value;
+    
+    if(letra == "a" && letra == "e" && letra == "i" && letra == "o" && letra == "u")
+        {
+            console.log("vogal");
+        }else{
+            console.log("consoante");
+        }
+}
 
 
