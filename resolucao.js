@@ -131,14 +131,15 @@ function notaA()
         var valor = prompt("digite a nota do aluno " + alunos[i]);
         notas.push(valor);
     }
+    y = 10;
     x = 0;
     var sla = valor[9];
     var verificar = valor[x];
-    for (var verde = 10 ; verde < 0 ; verde -= 1)
+    for (var verde = y ; verde <= 0 ; verde -= 1)
         {
             
             if (verificar >= sla){
-                verde = -1;
+                y = -1;
             }else{
                 x += 1;
                 verificar = valor[x];
