@@ -109,7 +109,7 @@ function contrario()
     }
 
 }
-//peça a nota de 10 alunos e diga qual a maior nota
+//pedir a nota de 10 alunos e diga qual a maior nota
 
 function notaA()
 {
@@ -131,10 +131,21 @@ function notaA()
         var valor = prompt("digite a nota do aluno " + alunos[i]);
         notas.push(valor);
     }
-    var maiornota = 
-    if (valor[0] > valor[1])
-    {
+    x = 0;
+    var sla = valor[9];
+    var verificar = valor[x];
+    for (var verde = 10 ; verde < 0 ; verde -= 1)
+        {
+            
+            if (verificar >= sla){
+                verde = -1;
+            }else{
+                x += 1;
+                verificar = valor[x];
+                // nao sabia como aumentar o valor do array:(
+            }
+        }
+        resposta.innerHTML = verificar;
 
-    }
-    console.log(notas);
+
 }
