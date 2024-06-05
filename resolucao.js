@@ -10,6 +10,7 @@
         resposta.innerHTML = "consoante";
     }
 
+    window.print();
 }
 
 function consoante_Alt()
@@ -109,7 +110,7 @@ function contrario()
     }
 
 }
-//peça a nota de 10 alunos e diga qual a maior nota
+//pedir a nota de 10 alunos e diga qual a maior nota
 
 function notaA()
 {
@@ -126,15 +127,59 @@ function notaA()
             , "Mariana"
              , "Benicio"];
 
-    for (var i = 0; i < 10; i += 1)
+    for (var i = 0; i < 2; i += 1)
     {
-        var valor = prompt("digite a nota do aluno " + alunos[i]);
+        var nota1 = prompt("digite a nota 1 do aluno " + alunos[i]);
+        var nota2 = prompt("digite a nota 2 do aluno " + alunos[i]);
+        var nota3 = prompt("digite a nota 3 do aluno " + alunos[i]);
+        var nota4 = prompt("digite a nota 4 do aluno " + alunos[i]);
+      
+
+
+        var valor = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFloat(nota4)) / 4;
         notas.push(valor);
     }
-    var maiornota = 
-    if (valor[0] > valor[1])
-    {
 
+    for(var i = 0; i < 10; i += 1)
+    {
+        resposta.innerHTML += "Aluno: " + alunos[i] + "Media : " + notas[i] + "<br/>"
     }
-    console.log(notas);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    y = 10;
+    x = 0;
+    z = 0;
+    var sla = valor[z];
+    var verificar = valor[x];
+    for (var verde = y ; verde <= 0 ; verde -= 1)
+        {
+            
+            if (verificar >= sla){
+                z += 1;
+                sla = valor[z];
+            }else{
+                x += 1;
+                verificar = valor[x];
+                // nao sabia como aumentar o valor do array:(
+            }
+        }
+        resposta.innerHTML = verificar;
+        */
+
+
 }

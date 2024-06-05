@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery.js"></script>
+    
+
+    <style>
+        h3 {
+            color:blue; 
+        }
+        .vermelha{
+            color: red;
+        }
+        .campo{
+            margin: 6px 0;
+
+        }
+        .campo label{
+            width: 50px;
+            display: inline-block;
+        }
+        .campo input, .campo select {
+            width:200px ;
+        }
+        .erro{
+            color:red;
+            border:1px solid red ;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Jquery</h1>
+
+    <input id = "cor" type="color" />
+
+    <h3>Título 1</h3>
+    <h3 class="vermelha">Título 2</h3>
+    <h3>Título 3</h3>
+
+    <fieldset>
+        <div class="campo">
+            <label>Nome</label>
+            <input  type="text" id="nome"/>
+        </div>
+        <div class="campo">
+            <label>Sexo</label>
+            <select id="sexo">
+                <option></option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+        </div>
+
+        <button class="bt">Enviar</button>
+    </fieldset>
+    
+</body>
+</html>
