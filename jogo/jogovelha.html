@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jogovelha.js"></script>
+    
+
+
+
+
+    <style>
+        .tabuleiro{
+            border: 4px solid black;
+            width: 312px;
+            height: 312px;
+            margin: 0 auto;
+            
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .casa{
+            border: 2px solid black;
+            width:100px;
+            height:100px;
+            display:inline-block;
+            
+            text-align: center;
+            font-size:80px ;
+        }
+        .bt-novo{
+            margin:10px auto;
+            display:block;
+            width: 120px;
+            height: 40px;
+            background-color: green;
+            color: white;
+            border: 1px solid black;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="tabuleiro">
+        <div class="casa" pos="0"></div>
+        <div class="casa" pos="1"></div>
+        <div class="casa" pos="2"></div>
+
+        <div class="casa" pos="3"></div>
+        <div class="casa" pos="4"></div>
+        <div class="casa" pos="5"></div>
+
+        <div class="casa" pos="6"></div>
+        <div class="casa" pos="7"></div>
+        <div class="casa" pos="8"></div>
+        
+    </div>
+
+    <button class="bt-novo">Novo Jogo</button>
+
+</body>
+</html>
